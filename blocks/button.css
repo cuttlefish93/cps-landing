@@ -1,0 +1,42 @@
+.button {
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	color: inherit;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.button--main {
+	width: 40px;
+	height: 40px;
+	background-color: var(--pink);
+	border-radius: 50%;
+	color: var(--white);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.button--burger {
+	background-image: url('../assets/images/burger-icon.svg');
+}
+
+.button--call {
+	background-image: url('../assets/images/call-us-icon.svg');
+}
+
+.button--write {
+	background-image: url('../assets/images/write-us-icon.svg');
+}
+
+.button--account {
+	background-image: url('../assets/images/account-icon.svg');
+}
+
+.button--make-order {
+	background-image: url('../assets/images/order-icon.svg');
+}
+
+.button--check-info {
+	background-image: url('../assets/images/status-icon.svg');
+}

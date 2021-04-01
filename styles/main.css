@@ -1,0 +1,48 @@
+@import '../assets/fonts/fonts.css';
+
+@import '../blocks/header.css';
+@import '../blocks/button.css';
+@import '../blocks/logo.css';
+@import '../blocks/contact-us.css';
+@import '../blocks/services.css';
+@import '../blocks/main.css';
+@import '../blocks/detailed-nav.css';
+@import '../blocks/repaired-brands.css';
+@import 'helpers.css';
+
+:root {
+	/* colors */
+	--pink: #ff3e79;
+	--white: #ffffff;
+	--primary-text-color: #1b1c21;
+	--secondary-text-color: #7e7e82;
+	--primary-border-color: #41f6d7;
+	--secondary-border-color: #b8ffec;
+	--tertiary-border-color: #d9fff5;
+	--separator-color: #eaeaea;
+	--main-bg-color: #f8f8f8;
+
+	/* fonts */
+	--main-font: 'TT Lakes', 'Arial', sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	color: var(--primary-text-color);
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
