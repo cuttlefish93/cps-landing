@@ -1,0 +1,12 @@
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.link:active {
+	transform: translateY(1px);
+}
+
+.link:hover {
+	filter: opacity(70%);
+}

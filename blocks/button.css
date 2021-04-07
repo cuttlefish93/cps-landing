@@ -5,6 +5,20 @@
 	color: inherit;
 	font-family: inherit;
 	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.button:active {
+	transform: translateY(3px);
+}
+
+.button:hover {
+	filter: opacity(50%);
+}
+
+.button:focus {
+	outline: none;
+	filter: brightness(0.5);
 }
 
 .button--main {
@@ -39,4 +53,12 @@
 
 .button--check-info {
 	background-image: url('../assets/images/status-icon.svg');
+}
+
+.button--close {
+	background-image: url('../assets/images/close-icon.svg');
+}
+
+.button--search {
+	background-image: url('../assets/images/search-icon.svg');
 }

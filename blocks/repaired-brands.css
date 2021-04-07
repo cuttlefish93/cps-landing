@@ -17,10 +17,9 @@
 .repaired-brands__link {
 	display: inline-block;
 	padding-left: 3rem;
-	color: inherit;
-	text-decoration: none;
 	font-weight: 500;
 	position: relative;
+	transition: all 0.3s ease-in-out;
 }
 
 .repaired-brands__link::before {

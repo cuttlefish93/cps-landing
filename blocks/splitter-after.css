@@ -1,0 +1,21 @@
+.splitter-after {
+	position: relative;
+}
+
+.splitter-after::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 32px;
+	background-color: var(--separator-color);
+	right: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.splitter-after::after {
+		display: block;
+	}
+}

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="vendor/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>Компания CPS</title>
 </head>
 
@@ -21,7 +21,7 @@
       <img src="assets/images/logo.png" alt="Логотип компании CPS" class="logo__img">
     </div>
 
-    <div class="contact-us">
+    <div class="contact-us ml-auto">
       <button class="button button--main button--call contact-us__btn">
         <span class="visually-hidden">Заказать обратный звонок</span>
       </button>
@@ -45,6 +45,53 @@
     </div>
 
     <!-- место для навигации -->
+    <nav class="nav">
+      <header class="nav__header">
+        <button class="button button--main button--close nav__close-btn">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Логотип компании CPS" class="logo__img">
+        </div>
+        <button class="button button--main button--search nav__search-btn">
+          <span class="visually-hidden">Искать</span>
+        </button>
+      </header>
+
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link active link">Ремонт техники</a></li>
+        <li class="nav__item"><a href="#" class="nav__link link">Услуги и сервисы</a></li>
+        <li class="nav__item"><a href="#" class="nav__link link">Корпоративным клиентам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link link">Продавцам техники</a></li>
+        <li class="nav__item"><a href="#" class="nav__link link">Партнерам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link link">Производителям</a></li>
+        <li class="nav__item"><a href="#" class="nav__link link">Наши сервисные центры</a></li>
+        <li class="nav__item"><a href="#" class="nav__link link">Контакты</a></li>
+      </ul>
+
+      <div class="contact-us nav__contact-us">
+        <button class="button button--main button--call contact-us__btn">
+          <span class="visually-hidden">Заказать обратный звонок</span>
+        </button>
+        <button class="button button--main button--write contact-us__btn">
+          <span class="visually-hidden">Оставить обратную связь</span>
+        </button>
+        <button class="button button--main button--account contact-us__btn">
+          <span class="visually-hidden">Переход в личный кабинет</span>
+        </button>
+      </div>
+
+      <div class="nav__contacts">
+        <span class="nav__email">mail@cps.com</span>
+        <span class="nav__phone">8 800 890 8900</span>
+      </div>
+
+      <ul class="nav__lang-list">
+        <li class="nav__lang-item active">ru</li>
+        <li class="nav__lang-item">en</li>
+        <li class="nav__lang-item">ch</li>
+      </ul>
+    </nav>
   </header>
 
   <main class="main">
@@ -64,22 +111,22 @@
 
       <ul class="detailed-nav__list">
         <li class="detailed-nav__item">
-          <a href="#repaired-brands" class="detailed-nav__link active-link">Ремонтируемые бренды</a>
+          <a href="#repaired-brands" class="detailed-nav__link active link">Ремонтируемые бренды</a>
         </li>
         <li class="detailed-nav__item">
-          <a href="#additional-services" class="detailed-nav__link">Дополнительные услуги</a>
+          <a href="#additional-services" class="detailed-nav__link link">Дополнительные услуги</a>
         </li>
         <li class="detailed-nav__item">
-          <a href="#prices" class="detailed-nav__link">Цены на услуги</a>
+          <a href="#prices" class="detailed-nav__link link">Цены на услуги</a>
         </li>
         <li class="detailed-nav__item">
-          <a href="#addresses" class="detailed-nav__link">Адреса сервисных центров</a>
+          <a href="#addresses" class="detailed-nav__link link">Адреса сервисных центров</a>
         </li>
         <li class="detailed-nav__item">
-          <a href="#special-prices" class="detailed-nav__link">Специальные цены</a>
+          <a href="#special-prices" class="detailed-nav__link link">Специальные цены</a>
         </li>
         <li class="detailed-nav__item">
-          <a href="#reviews" class="detailed-nav__link">Отзывы</a>
+          <a href="#reviews" class="detailed-nav__link link">Отзывы</a>
         </li>
       </ul>
 
@@ -97,12 +144,14 @@
             клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и
             близким.
           </p>
-          <a href="#" class="repaired-brands__link">Читать далее</a>
+          <a href="#" class="repaired-brands__link link">Читать далее</a>
         </div>
         <div class="repaired-brands__img"></div>
       </div>
     </section>
   </main>
+
+  <div class="overlay"></div>
 </body>
 
 </html>

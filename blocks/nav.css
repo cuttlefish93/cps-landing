@@ -1,0 +1,152 @@
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 100vh;
+	background-color: var(--white);
+	padding: 1.8rem 0 3rem;
+	z-index: 10;
+	overflow-y: scroll;
+}
+
+.nav__header {
+	padding: 0 1.6rem;
+	margin-bottom: 2.6rem;
+	display: flex;
+	align-items: center;
+}
+
+.nav__close-btn {
+	margin-right: 1.6rem;
+}
+
+.nav__search-btn {
+	margin-left: auto;
+}
+
+.nav__list {
+	margin-bottom: 3rem;
+	list-style-type: none;
+}
+
+.nav__item {
+	margin-bottom: 2.4rem;
+}
+
+.nav__item:last-child {
+	margin-bottom: 0;
+}
+
+.nav__link {
+	display: block;
+	padding: 0 1.6rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav__link.active {
+	color: var(--secondary-text-color);
+	border-left: 4px solid var(--primary-border-color);
+	padding-left: 1.2rem;
+}
+
+.nav__contact-us {
+	display: block;
+	padding: 0 1.6rem;
+	margin-bottom: 1.6rem;
+}
+
+.nav__contacts {
+	padding: 0 1.6rem;
+	margin-bottom: 0.8rem;
+}
+
+.nav__email {
+	display: block;
+	margin-bottom: 1.2rem;
+}
+
+.nav__phone {
+	display: block;
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+
+.nav__lang-list {
+	padding: 0 1.6rem;
+	list-style-type: none;
+}
+
+.nav__lang-item {
+	display: inline-block;
+	text-transform: uppercase;
+	margin-right: 0.7rem;
+}
+
+.nav__lang-item:last-child {
+	margin-right: 0;
+}
+
+.nav__lang-item.active {
+	color: var(--secondary-text-color);
+}
+
+@media (min-width: 360px) {
+	.nav__header {
+		padding: 0 2.4rem;
+	}
+
+	.nav__link {
+		padding: 0 2.4rem;
+	}
+
+	.nav__link.active {
+		padding: 0 2rem;
+	}
+
+	.nav__contact-us {
+		padding: 0 2.4rem;
+	}
+
+	.nav__contacts {
+		padding: 0 2.4rem;
+	}
+
+	.nav__lang-list {
+		padding: 0 2.4rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.nav__header {
+		margin-bottom: 5rem;
+	}
+
+	.nav__list {
+		margin-bottom: 27rem;
+	}
+
+	.nav__item {
+		margin-bottom: 3.2rem;
+	}
+
+	.nav__item:last-child {
+		margin-bottom: 0;
+	}
+
+	.nav__contacts {
+		margin-bottom: 4rem;
+	}
+}
+
+@media (min-width: 1120px) {
+	.nav {
+		visibility: visible;
+		padding-top: 3rem;
+		position: absolute;
+	}
+
+	.nav__close-btn {
+		display: none;
+	}
+}

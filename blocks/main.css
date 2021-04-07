@@ -5,8 +5,7 @@
 @media (min-width: 1120px) {
 	.main {
 		position: relative;
-		max-width: 1200px;
-		margin: 0 auto;
+		margin-left: 320px;
 	}
 
 	.main__services {

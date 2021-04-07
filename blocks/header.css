@@ -21,6 +21,9 @@
 
 @media (min-width: 1120px) {
 	.header {
-		display: none;
+		visibility: hidden;
+		position: absolute;
+		width: 0;
+		height: 0;
 	}
 }
