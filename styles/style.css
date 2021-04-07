@@ -1,6 +1,12 @@
 @import '../assets/fonts/fonts.css';
 
+@import 'helpers.css';
+@import '../blocks/link.css';
+@import '../blocks/overlay.css';
+@import '../blocks/splitter-before.css';
+@import '../blocks/splitter-after.css';
 @import '../blocks/header.css';
+@import '../blocks/nav.css';
 @import '../blocks/button.css';
 @import '../blocks/logo.css';
 @import '../blocks/contact-us.css';
@@ -8,7 +14,6 @@
 @import '../blocks/main.css';
 @import '../blocks/detailed-nav.css';
 @import '../blocks/repaired-brands.css';
-@import 'helpers.css';
 
 :root {
 	/* colors */
