@@ -45,7 +45,7 @@
     </div>
 
     <!-- место для навигации -->
-    <nav class="nav">
+    <nav class="nav hidden">
       <header class="nav__header">
         <button class="button button--main button--close nav__close-btn">
           <span class="visually-hidden">Закрыть меню</span>
@@ -149,9 +149,66 @@
         <div class="repaired-brands__img"></div>
       </div>
     </section>
+
+    <section class="brands">
+      <h2 class="title brands__title">
+        Ремонт техники различных брендов
+      </h2>
+      <div class="brands-slider swiper-container">
+        <ul class="brands-slider__wrapper swiper-wrapper">
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/lenovo-logo.png" alt="Lenovo logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/samsung-logo.png" alt="Samsung logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/apple-logo.png" alt="Apple logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/bosch-logo.png" alt="Bosch logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/hp-logo.png" alt="HP logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/acer-logo.png" alt="Acer logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/viewsonic-logo.png" alt="Viewsonic logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/sony-logo.png" alt="Sony logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/acer-logo.png" alt="Acer logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+          <li class="brands-slider__slide swiper-slide">
+            <img src="assets/images/viewsonic-logo.png" alt="Viewsonic logo" class="brands-slider__brand-img">
+            <a href="#" class="brands-slider__link"></a>
+          </li>
+        </ul>
+
+        <div class="brands-slider__pagination swiper-pagination"></div>
+
+        <button class="button brands-slider__btn brands-slider__btn--show hidden" type="button">Показать все</button>
+        <button class="button brands-slider__btn brands-slider__btn--hide hidden" type="button">Скрыть</button>
+      </div>
+    </section>
   </main>
 
-  <div class="overlay"></div>
+  <div class="overlay hidden"></div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

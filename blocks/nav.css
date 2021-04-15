@@ -10,6 +10,10 @@
 	overflow-y: scroll;
 }
 
+.nav.hidden {
+	display: none;
+}
+
 .nav__header {
 	padding: 0 1.6rem;
 	margin-bottom: 2.6rem;
