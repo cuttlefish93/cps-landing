@@ -1,27 +1,12 @@
 @import 'vendors/module';
-@import 'utils/module';
 @import 'base/module';
+@import 'utils/module';
 @import 'components/module';
 @import 'layout/module';
 @import 'pages/module';
 @import 'themes/module';
 
-:root {
-	/* colors */
-	--pink: #ff3e79;
-	--white: #ffffff;
-	--primary-text-color: #1b1c21;
-	--secondary-text-color: #7e7e82;
-  --tertiary-text-color: #B5B6BC;
-	--primary-border-color: #41f6d7;
-	--secondary-border-color: #b8ffec;
-	--tertiary-border-color: #d9fff5;
-	--separator-color: #eaeaea;
-	--main-bg-color: #f8f8f8;
 
-	/* fonts */
-	--main-font: 'TT Lakes', 'Arial', sans-serif;
-}
 
 
 

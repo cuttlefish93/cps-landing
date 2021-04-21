@@ -1,5 +1,5 @@
 .modal {
-	background-color: var(--white);
+	background-color: $white;
 	padding-top: 10rem;
 	width: 100%;
 	max-width: 440px;
@@ -33,11 +33,11 @@
 	}
 
 	&__title {
-		font-size: 2.4rem;
+		font-size: $font-size-big;
 		font-weight: 700;
-		color: var(--primary-text-color);
+		color: $main-text-color;
 		padding-left: 1.2rem;
-		border-left: 4px solid var(--primary-border-color);
+		border-left: 4px solid $primary-border-color;
 		margin-bottom: 2.4rem;
 
 		@include bp-768 {
@@ -46,7 +46,7 @@
 	}
 
 	&__form {
-		padding: 0 1.6rem;
+		padding: $padding-hor-sm;
 		display: flex;
 		flex-direction: column;
 
@@ -59,13 +59,13 @@
 		width: 100%;
 		display: block;
 		padding: 1.2rem 1.6rem;
-		border: 1px solid var(--separator-color);
+		border: 1px solid $grey-lightest;
 		border-radius: 8px;
 		margin-bottom: 1.6rem;
 
 		&::placeholder {
-			color: var(--tertiary-text-color);
-			font-size: 1.6rem;
+			color: $grey-lighten;
+			font-size: $font-size-main;
 		}
 	}
 
@@ -74,13 +74,13 @@
 	}
 
 	&__privacy {
-		color: var(--secondary-text-color);
-		font-size: 1.4rem;
+		color: $grey;
+		font-size: $font-size-md;
 		margin-bottom: 2rem;
 	}
 
 	&__link {
-		color: var(--pink);
+		color: $pink;
 	}
 
 	&__btn {

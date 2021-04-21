@@ -9,8 +9,8 @@
 </head>
 
 <body class="main-page">
+  <!-- header starts -->
   <header class="header">
-
     <button class="button button--circle button--burger header__burger splitter-after">
       <span class="visually-hidden">Menu</span>
     </button>
@@ -84,13 +84,15 @@
       </div>
 
       <ul class="nav__lang-list">
-        <li class="nav__lang-item active">ru</li>
-        <li class="nav__lang-item">en</li>
-        <li class="nav__lang-item">ch</li>
+        <li class="nav__lang-item"><a href="#" class="nav__lang-link active">ru</a></li>
+        <li class="nav__lang-item"><a href="#" class="nav__lang-link">en</a></li>
+        <li class="nav__lang-item"><a href="#" class="nav__lang-link">ch</a></li>
       </ul>
     </nav>
   </header>
+  <!-- header ends -->
 
+  <!-- main starts -->
   <main class="main-content">
     <div class="services main-content__services">
       <button class="button services__btn">
@@ -148,6 +150,7 @@
         <div class="repaired-brands__img"></div>
       </div>
 
+      <!-- остальные 5 блоков добавлены для примера работы табов, контент рандомный -->
       <div class="detailed-nav__info additional-services" id="additional-services">
         <div class="repaired-brands__content">
           <p class="repaired-brands__text">
@@ -258,6 +261,7 @@
       <h2 class="title brands__title">
         Ремонт техники различных брендов
       </h2>
+
       <div class="slider brands__slider swiper-container">
         <ul class="slider__wrapper brands__slider-wrapper swiper-wrapper">
           <li class="slider__slide brands__slider-slide swiper-slide">
@@ -364,6 +368,7 @@
       <h2 class="title prices__title">
         цены на услуги
       </h2>
+
       <ul class="prices__header">
         <li class="prices__header-item">Ремонтные услуги</li>
         <li class="prices__header-item">Цена</li>
@@ -374,76 +379,77 @@
         <ul class="slider__wrapper prices__slider-wrapper swiper-wrapper">
           <li class="slider__slide prices__slider-slide swiper-slide">
             <p class="prices__slider-item prices__service">
-              <span class="prices__service-header">Ремонтные услуги</span>
-              <span class="prices__service-name">Диагностика</span>
+              <span class="prices__slider-content prices__service-header">Ремонтные услуги</span>
+              <span class="prices__slider-content prices__service-name">Диагностика</span>
             </p>
             <p class="prices__slider-item prices__price">
-              <span class="prices__price-header">Цена</span>
-              <span class="prices__price-value">Бесплатно</span>
+              <span class="prices__slider-content prices__price-header">Цена</span>
+              <span class="prices__slider-content prices__price-value">Бесплатно</span>
             </p>
             <p class="prices__slider-item prices__time">
-              <span class="prices__time-header">Срок</span>
-              <span class="prices__time-value">30 мин</span>
+              <span class="prices__slider-content prices__time-header">Срок</span>
+              <span class="prices__slider-content prices__time-value">30 мин</span>
             </p>
             <button class="button button--rounded prices__btn" type="button">Заказать</button>
           </li>
           <li class="slider__slide prices__slider-slide swiper-slide">
             <p class="prices__slider-item prices__service">
-              <span class="prices__service-header">Ремонтные услуги</span>
-              <span class="prices__service-name">Замена дисплея</span>
+              <span class="prices__slider-content prices__service-header">Ремонтные услуги</span>
+              <span class="prices__slider-content prices__service-name">Замена дисплея</span>
             </p>
             <p class="prices__slider-item prices__price">
-              <span class="prices__price-header">Цена</span>
-              <span class="prices__price-value">1 000 ₽</span>
+              <span class="prices__slider-content prices__price-header">Цена</span>
+              <span class="prices__slider-content prices__price-value">1 000 ₽</span>
             </p>
             <p class="prices__slider-item prices__time">
-              <span class="prices__time-header">Срок</span>
-              <span class="prices__time-value">30-120 мин</span>
+              <span class="prices__slider-content prices__time-header">Срок</span>
+              <span class="prices__slider-content prices__time-value">30-120 мин</span>
             </p>
             <button class="button button--rounded prices__btn" type="button">Заказать</button>
           </li>
           <li class="slider__slide prices__slider-slide swiper-slide">
             <p class="prices__slider-item prices__service">
-              <span class="prices__service-header">Ремонтные услуги</span>
-              <span class="prices__service-name">Замена полифонического динамика</span>
+              <span class="prices__slider-content prices__service-header">Ремонтные услуги</span>
+              <span class="prices__slider-content prices__service-name">Замена полифонического динамика</span>
             </p>
             <p class="prices__slider-item prices__price">
-              <span class="prices__price-header">Цена</span>
-              <span class="prices__price-value">1 000 ₽</span>
+              <span class="prices__slider-content prices__price-header">Цена</span>
+              <span class="prices__slider-content prices__price-value">1 000 ₽</span>
             </p>
             <p class="prices__slider-item prices__time">
-              <span class="prices__time-header">Срок</span>
-              <span class="prices__time-value">30-120 мин</span>
+              <span class="prices__slider-content prices__time-header">Срок</span>
+              <span class="prices__slider-content prices__time-value">30-120 мин</span>
             </p>
             <button class="button button--rounded prices__btn" type="button">Заказать</button>
           </li>
           <li class="slider__slide prices__slider-slide swiper-slide">
             <p class="prices__slider-item prices__service">
-              <span class="prices__service-header">Ремонтные услуги</span>
-              <span class="prices__service-name">Тестирование с выдачей технического заключения</span>
+              <span class="prices__slider-content prices__service-header">Ремонтные услуги</span>
+              <span class="prices__slider-content prices__service-name">Тестирование с выдачей технического
+                заключения</span>
             </p>
             <p class="prices__slider-item prices__price">
-              <span class="prices__price-header">Цена</span>
-              <span class="prices__price-value">1 000 ₽</span>
+              <span class="prices__slider-content prices__price-header">Цена</span>
+              <span class="prices__slider-content prices__price-value">1 000 ₽</span>
             </p>
             <p class="prices__slider-item prices__time">
-              <span class="prices__time-header">Срок</span>
-              <span class="prices__time-value">30-120 мин</span>
+              <span class="prices__slider-content prices__time-header">Срок</span>
+              <span class="prices__slider-content prices__time-value">30-120 мин</span>
             </p>
             <button class="button button--rounded prices__btn" type="button">Заказать</button>
           </li>
           <li class="slider__slide prices__slider-slide swiper-slide">
             <p class="prices__slider-item prices__service">
-              <span class="prices__service-header">Ремонтные услуги</span>
-              <span class="prices__service-name">Замена программного обеспечения</span>
+              <span class="prices__slider-content prices__service-header">Ремонтные услуги</span>
+              <span class="prices__slider-content prices__service-name">Замена программного обеспечения</span>
             </p>
             <p class="prices__slider-item prices__price">
-              <span class="prices__price-header">Цена</span>
-              <span class="prices__price-value">1 000 ₽</span>
+              <span class="prices__slider-content prices__price-header">Цена</span>
+              <span class="prices__slider-content prices__price-value">1 000 ₽</span>
             </p>
             <p class="prices__slider-item prices__time">
-              <span class="prices__time-header">Срок</span>
-              <span class="prices__time-value">30-120 мин</span>
+              <span class="prices__slider-content prices__time-header">Срок</span>
+              <span class="prices__slider-content prices__time-value">30-120 мин</span>
             </p>
             <button class="button button--rounded prices__btn" type="button">Заказать</button>
           </li>
@@ -462,7 +468,9 @@
       </a>
     </section>
   </main>
+  <!-- main ends -->
 
+  <!-- footer starts -->
   <footer class="footer">
     <ul class="footer__content">
       <li class="footer__item">
@@ -481,6 +489,7 @@
       </li>
     </ul>
   </footer>
+  <!-- footer ends -->
 
   <div class="modal modal-feedback">
     <button class="button button--circle button--close modal__close-btn">
@@ -522,5 +531,3 @@
 </body>
 
 </html>
-
-<!-- @TODO: в блоке nav добавить паддинги только родителю, а зеленую активную линию реализовать с помощью отдельного класса-хелпера -->

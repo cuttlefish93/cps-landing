@@ -1,6 +1,6 @@
 .main-page {
-	color: var(--primary-text-color);
-	font-family: var(--main-font);
+	color: $main-text-color;
+	font-family: $main-font;
 	font-weight: 400;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -8,4 +8,6 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

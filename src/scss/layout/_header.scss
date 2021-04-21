@@ -1,11 +1,12 @@
 .header {
 	min-height: 88px;
-	padding: $padding-sm;
+	padding: $padding-hor-sm;
 	display: flex;
 	align-items: center;
+	border-bottom: 1px solid $tertiary-border-color;
 
 	@include bp-768 {
-		padding: $padding-md;
+		padding: $padding-hor-md;
 	}
 
 	@include bp-1120 {
@@ -25,10 +26,10 @@
 
 	&__contact-us {
 		display: none;
-		margin-left: auto;
 
 		@include bp-768 {
 			display: block;
+			margin-left: auto;
 		}
 	}
 

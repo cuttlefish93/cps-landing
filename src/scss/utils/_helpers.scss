@@ -1,75 +1,69 @@
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.hidden {
-  display: none;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .splitter-after {
-  position: relative;
+	position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 32px;
-    background-color: var(--separator-color);
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: none;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 32px;
+		background-color: $grey-lightest;
+		right: -20px;
+		top: 50%;
+		transform: translateY(-50%);
+		display: none;
 
-    @media (min-width: 768px) {
-      & {
-        display: block;
-      }
-    }
-  }
+		@include bp-768 {
+			display: block;
+		}
+	}
 }
 
 .splitter-before {
-  position: relative;
+	position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 32px;
-    background-color: var(--separator-color);
-    left: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+	&::before {
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 32px;
+		background-color: $grey-lightest;
+		left: -20px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 
 .handle-content {
-  position: relative;
+	position: relative;
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 11px;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+	&::before {
+		content: '';
+		position: absolute;
+		width: 8px;
+		height: 11px;
+		left: 8px;
+		top: 50%;
+		transform: translateY(-50%);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
 
-  &--show::before {
-    background-image: url('../img/arrow-down.svg');
-  }
+	&--show::before {
+		background-image: url('../img/arrow-down.svg');
+	}
 
-  &--hide::before {
-    background-image: url('../img/arrow-up.svg');
-  }
+	&--hide::before {
+		background-image: url('../img/arrow-up.svg');
+	}
 }

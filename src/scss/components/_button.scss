@@ -5,8 +5,7 @@
 	color: inherit;
 	font-family: inherit;
 	cursor: pointer;
-	transition: all 0.3s ease-in-out;
-	/* заменить all */
+	transition: filter 0.3s ease-in-out, transform 0.3s linear;
 
 	&:active {
 		transform: translateY(3px);
@@ -25,20 +24,20 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
-		background-color: var(--pink);
+		background-color: $pink;
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 	}
 
 	&--rounded {
-		background-color: var(--pink);
+		background-color: $pink;
 		border-radius: 16px;
 		width: 13.6rem;
 		padding: 1rem 3.5rem 1rem 2.5rem;
 		text-align: left;
 		letter-spacing: 1px;
-		color: var(--white);
-		font-size: 1.2rem;
+		color: $white;
+		font-size: $font-size-sm;
 		text-transform: uppercase;
 		position: relative;
 
@@ -84,7 +83,7 @@
 			width: 40px;
 			height: 40px;
 			border-radius: 50%;
-			background-color: var(--pink);
+			background-color: $pink;
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 		}

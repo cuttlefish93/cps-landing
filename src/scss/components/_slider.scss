@@ -32,9 +32,9 @@
 		box-sizing: border-box;
 		width: 240px;
 		padding: 1.6rem;
-		border: 1px solid var(--separator-color);
+		border: 1px solid $grey-lightest;
 		border-radius: 6px;
-		background-color: var(--white);
+		background-color: $white;
 
 		@include bp-768 {
 			width: auto;
@@ -48,7 +48,7 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
-		border: 2px solid var(--pink);
+		border: 2px solid $pink;
 		background-image: url(../img/right-pink-arrow.svg);
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -73,18 +73,6 @@
 
 		&::before {
 			left: 0;
-		}
-
-		// &--show {
-		// 	display: none;
-
-		// 	@include bp-768 {
-		// 		display: block;
-		// 	}
-		// }
-
-		&--hide {
-			// display: none;
 		}
 	}
 }

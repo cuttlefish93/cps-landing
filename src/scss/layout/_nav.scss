@@ -4,7 +4,7 @@
 	left: 0;
 	width: 320px;
 	height: 100%;
-	background-color: var(--white);
+	background-color: $white;
 	padding: 1.8rem 0 3rem;
 	z-index: 8;
 	overflow-y: scroll;
@@ -26,14 +26,14 @@
 	}
 
 	&__header {
-		padding: $padding-sm;
+		padding: $padding-hor-sm;
 		margin-bottom: 2.6rem;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
 
 		@include bp-360 {
-			padding: $padding-md;
+			padding: $padding-hor-md;
 		}
 
 		@include bp-768 {
@@ -79,13 +79,11 @@
 
 	.nav__link {
 		display: block;
-		padding: $padding-sm;
-		transition: all 0.3s ease-in-out;
-		/* заменить all */
+		padding: $padding-hor-sm;
 
 		&.active {
-			color: var(--secondary-text-color);
-			border-left: 4px solid var(--primary-border-color);
+			color: $grey;
+			border-left: 4px solid $primary-border-color;
 			padding-left: 1.2rem;
 
 			@include bp-360 {
@@ -94,26 +92,26 @@
 		}
 
 		@include bp-360 {
-			padding: $padding-md;
+			padding: $padding-hor-md;
 		}
 	}
 
 	&__contact-us {
 		display: block;
-		padding: $padding-sm;
+		padding: $padding-hor-sm;
 		margin-bottom: 1.6rem;
 
 		@include bp-360 {
-			padding: $padding-md;
+			padding: $padding-hor-md;
 		}
 	}
 
 	&__contacts {
-		padding: $padding-sm;
+		padding: $padding-hor-sm;
 		margin-bottom: 0.8rem;
 
 		@include bp-360 {
-			padding: $padding-md;
+			padding: $padding-hor-md;
 		}
 
 		@include bp-768 {
@@ -128,29 +126,33 @@
 
 	&__phone {
 		display: block;
-		font-size: 2.4rem;
+		font-size: $font-size-big;
 		font-weight: 700;
 	}
 
 	&__lang-list {
-		padding: $padding-sm;
-		list-style-type: none;
+		padding: $padding-hor-sm;
 
 		@include bp-360 {
-			padding: $padding-md;
+			padding: $padding-hor-md;
 		}
 	}
 
 	&__lang-item {
-		display: inline-block;
-		text-transform: uppercase;
 		margin-right: 0.7rem;
+		display: inline-block;
 
 		&:last-child {
 			margin-right: 0;
 		}
+	}
+
+	&__lang-link {
+		display: inline-block;
+		text-transform: uppercase;
+
 		&.active {
-			color: var(--secondary-text-color);
+			color: $grey;
 		}
 	}
 }

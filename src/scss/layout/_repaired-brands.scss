@@ -1,71 +1,67 @@
 .repaired-brands {
-  padding: 0;
-  
-  @include bp-768 {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-    display: flex;
-  }
+	padding: 0;
 
-  @include bp-1120 {
-    padding-left: 3.4rem;
-    padding-right: 3rem;
-  }
+	@include bp-768 {
+		padding: $padding-hor-md;
+		display: flex;
+	}
 
-  &__content {
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    margin-bottom: 1.6rem;
+	@include bp-1120 {
+		padding-left: 3.4rem;
+		padding-right: 3rem;
+	}
 
-    @include bp-768 {
-      padding: 0;
-      margin: 0;
-      margin-right: 4rem;
-      align-self: flex-start;
-    }
+	&__content {
+		padding: $padding-hor-sm;
+		margin-bottom: 1.6rem;
 
-    @include bp-1120 {
-      padding-top: 2rem;
-    }
-  }
+		@include bp-768 {
+			padding: 0;
+			margin: 0;
+			margin-right: 4rem;
+			align-self: flex-start;
+		}
 
-  &__text {
-    margin-bottom: 1.6rem;
-    font-size: 1.4rem;
-    line-height: 1.4;
+		@include bp-1120 {
+			padding-top: 2rem;
+		}
+	}
 
-    &:last-of-type {
-      display: none;
+	&__text {
+		margin-bottom: 1.6rem;
+		font-size: $font-size-md;
+		line-height: 1.4;
 
-      @include bp-768 {
-        display: block;
-      }
-    }
-  }
+		&:last-of-type {
+			display: none;
 
-  &__link {
-    display: inline-block;
-    padding-left: 3rem;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    /* исправить */
-  }
+			@include bp-768 {
+				display: block;
+			}
+		}
+	}
 
-  &__img {
-    background-image: url("../img/about-bg.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    min-height: 17.6rem;
+	&__link {
+		display: inline-block;
+		padding-left: 3rem;
+		font-weight: 500;
+	}
 
-    @include bp-650 {
-      min-width: 36rem;
-      min-height: 20rem;
-    }
+	&__img {
+		background-image: url('../img/about-bg.jpeg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		min-height: 17.6rem;
 
-    @include bp-1120 {
-      min-width: 53rem;
-      min-height: 30rem;
-    }
-  }
+		@include bp-650 {
+			min-width: 36rem;
+			min-height: 20rem;
+		}
+
+		@include bp-1120 {
+			min-width: 53rem;
+			min-height: 30rem;
+		}
+	}
 }
