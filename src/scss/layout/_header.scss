@@ -1,0 +1,42 @@
+.header {
+	min-height: 88px;
+	padding: $padding-sm;
+	display: flex;
+	align-items: center;
+
+	@include bp-768 {
+		padding: $padding-md;
+	}
+
+	@include bp-1120 {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+		min-height: 0;
+	}
+
+	&__burger {
+		margin-right: 1.6rem;
+
+		@include bp-768 {
+			margin-right: 4.2rem;
+		}
+	}
+
+	&__contact-us {
+		display: none;
+		margin-left: auto;
+
+		@include bp-768 {
+			display: block;
+		}
+	}
+
+	&__services {
+		margin-left: auto;
+
+		@include bp-768 {
+			margin-left: 4.2rem;
+		}
+	}
+}

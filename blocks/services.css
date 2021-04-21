@@ -1,6 +1,5 @@
 .services {
 	display: flex;
-	margin-left: auto;
 }
 
 .services__btn {
@@ -18,8 +17,3 @@
 	margin-right: 0.8rem;
 }
 
-@media (min-width: 768px) {
-	.services {
-		margin-left: 4.2rem;
-	}
-}

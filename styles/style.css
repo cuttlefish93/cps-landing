@@ -34,27 +34,3 @@
 	/* fonts */
 	--main-font: 'TT Lakes', 'Arial', sans-serif;
 }
-
-html {
-	box-sizing: border-box;
-	font-size: 10px;
-}
-
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-}
-
-body {
-	color: var(--primary-text-color);
-	font-family: var(--main-font);
-	font-weight: 400;
-	font-size: 1.6rem;
-	line-height: 1.5;
-	position: relative;
-	max-width: 1440px;
-	margin: 0 auto;
-}

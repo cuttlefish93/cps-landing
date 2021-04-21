@@ -1,0 +1,9 @@
+.contact-us {
+  &__btn {
+    margin-right: 1.6rem;
+
+    &:last-child {
+      margin-right: 0rem;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.button {
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	color: inherit;
+	font-family: inherit;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	/* заменить all */
+
+	&:active {
+		transform: translateY(3px);
+	}
+
+	&:hover {
+		filter: opacity(50%);
+	}
+
+	&:focus {
+		outline: none;
+		filter: brightness(0.5);
+	}
+
+	&--circle {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: var(--pink);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+
+	&--rounded {
+		background-color: var(--pink);
+		border-radius: 16px;
+		width: 13.6rem;
+		padding: 1rem 3.5rem 1rem 2.5rem;
+		text-align: left;
+		letter-spacing: 1px;
+		color: var(--white);
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		position: relative;
+
+		&::after {
+			content: '';
+			background-image: url('../img/right-white-arrow.svg');
+			background-repeat: no-repeat;
+			position: absolute;
+			width: 8px;
+			height: 10px;
+			top: 50%;
+			right: 25px;
+			transform: translateY(-50%);
+		}
+	}
+
+	&--burger {
+		background-image: url('../img/burger-icon.svg');
+	}
+
+	&--call {
+		background-image: url('../img/call-us-icon.svg');
+	}
+
+	&--write {
+		background-image: url('../img/write-us-icon.svg');
+	}
+
+	&--account {
+		background-image: url('../img/account-icon.svg');
+	}
+
+	&--close {
+		background-image: url('../img/close-icon.svg');
+	}
+
+	&--search {
+		background-image: url('../img/search-icon.svg');
+	}
+
+	&__icon {
+		&--circle {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: var(--pink);
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+
+		&--make-order {
+			background-image: url('../img/order-icon.svg');
+		}
+
+		&--check-info {
+			background-image: url('../img/status-icon.svg');
+		}
+	}
+}

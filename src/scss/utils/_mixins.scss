@@ -1,0 +1,29 @@
+@mixin bp-360 {
+	@media (min-width: 360px) {
+		@content;
+	}
+}
+
+@mixin bp-650 {
+	@media (min-width: 650px) {
+		@content;
+	}
+}
+
+@mixin bp-768 {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin bp-1120 {
+	@media (min-width: 1120px) {
+		@content;
+	}
+}
+
+@mixin bp-1440 {
+	@media (min-width: 1440px) {
+		@content;
+	}
+}

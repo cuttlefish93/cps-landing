@@ -1,0 +1,89 @@
+.modal {
+	background-color: var(--white);
+	padding-top: 10rem;
+	width: 100%;
+	max-width: 440px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	transform: translateX(150%);
+	opacity: 0;
+	transition: transform 0.5s ease, opacity 0.5s linear;
+
+	&.opened {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	@include bp-768 {
+		padding-top: 4rem;
+	}
+
+	&__close-btn {
+		position: absolute;
+		left: 16px;
+		top: 24px;
+
+		@include bp-768 {
+			left: -70px;
+			top: 40px;
+		}
+	}
+
+	&__title {
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: var(--primary-text-color);
+		padding-left: 1.2rem;
+		border-left: 4px solid var(--primary-border-color);
+		margin-bottom: 2.4rem;
+
+		@include bp-768 {
+			padding-left: 2.6rem;
+		}
+	}
+
+	&__form {
+		padding: 0 1.6rem;
+		display: flex;
+		flex-direction: column;
+
+		@include bp-768 {
+			padding: 0 3rem;
+		}
+	}
+
+	&__input {
+		width: 100%;
+		display: block;
+		padding: 1.2rem 1.6rem;
+		border: 1px solid var(--separator-color);
+		border-radius: 8px;
+		margin-bottom: 1.6rem;
+
+		&::placeholder {
+			color: var(--tertiary-text-color);
+			font-size: 1.6rem;
+		}
+	}
+
+	&__text {
+		min-height: 118px;
+	}
+
+	&__privacy {
+		color: var(--secondary-text-color);
+		font-size: 1.4rem;
+		margin-bottom: 2rem;
+	}
+
+	&__link {
+		color: var(--pink);
+	}
+
+	&__btn {
+		align-self: flex-end;
+	}
+}

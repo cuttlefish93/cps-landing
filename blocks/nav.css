@@ -31,7 +31,6 @@
 
 .nav__list {
 	margin-bottom: 3rem;
-	list-style-type: none;
 }
 
 .nav__item {
@@ -46,6 +45,7 @@
 	display: block;
 	padding: 0 1.6rem;
 	transition: all 0.3s ease-in-out;
+	/* заменить all */
 }
 
 .nav__link.active {

@@ -18,8 +18,8 @@
 	display: inline-block;
 	padding-left: 3rem;
 	font-weight: 500;
-	position: relative;
 	transition: all 0.3s ease-in-out;
+	/* исправить */
 }
 
 .repaired-brands__link::before {

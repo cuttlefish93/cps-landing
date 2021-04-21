@@ -1,25 +1,6 @@
-.button {
-	display: inline-block;
-	border: none;
-	background-color: transparent;
-	color: inherit;
-	font-family: inherit;
-	cursor: pointer;
-	transition: all 0.3s ease-in-out;
-}
 
-.button:active {
-	transform: translateY(3px);
-}
 
-.button:hover {
-	filter: opacity(50%);
-}
 
-.button:focus {
-	outline: none;
-	filter: brightness(0.5);
-}
 
 .button--main {
 	width: 40px;

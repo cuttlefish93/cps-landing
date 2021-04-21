@@ -1,0 +1,22 @@
+.services {
+	display: flex;
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.6rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn-text {
+    margin-right: 0.8rem;
+  }
+}
+
+
+
+

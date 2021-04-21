@@ -1,0 +1,194 @@
+.prices {
+	background-color: var(--main-bg-color);
+	border-bottom: 1px solid var(--tertiary-border-color);
+	padding-bottom: 4rem;
+
+	&__title {
+		padding: 1.6rem;
+
+		@include bp-768 {
+			margin-bottom: 3rem;
+			padding: 1.6rem 2.4rem;
+		}
+
+		@include bp-1440 {
+			padding: 1.6rem 3.2rem;
+		}
+	}
+
+	&__header {
+		display: none;
+
+		@include bp-768 {
+			display: flex;
+			margin: 0 4rem;
+			font-size: 1.4rem;
+			color: var(--secondary-text-color);
+		}
+
+		@include bp-1440 {
+			margin: 0 5.6rem;
+		}
+	}
+
+	&__header-item:nth-child(1) {
+		width: 45%;
+	}
+
+	&__header-item:nth-child(2) {
+		width: 20%;
+	}
+
+	&__header-item:nth-child(3) {
+		width: 35%;
+	}
+
+	&__slider {
+		@include bp-768 {
+			padding: 1.6rem 2.4rem 2.4rem;
+		}
+
+		@include bp-1440 {
+			padding: 1.6rem 3.2rem 2.4rem;
+		}
+	}
+
+	&__slider-wrapper {
+		@include bp-768 {
+			background-color: var(--white);
+			padding: 0 1.6rem;
+			border-radius: 6px;
+			display: flex;
+			flex-direction: column;
+			height: auto;
+			width: auto;
+			gap: 0;
+		}
+
+		@include bp-1440 {
+			padding: 0 2.4rem;
+		}
+	}
+
+	&__slider-slide {
+		width: 260px;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		height: auto;
+
+		@include bp-768 {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid var(--separator-color);
+			border-radius: 0;
+			padding: 2rem 0;
+			flex-direction: row;
+			align-items: center;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+
+	&__slider-item {
+		margin-bottom: 1.6rem;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		@include bp-768 {
+			margin-bottom: 0;
+
+			&:nth-of-type(1) {
+				width: 45%;
+			}
+
+			&:nth-of-type(2) {
+				width: 20%;
+			}
+
+			&:nth-of-type(3) {
+				width: 20%;
+			}
+		}
+
+		span {
+			display: block;
+			font-size: 1.4rem;
+
+			&:nth-child(1) {
+				color: var(--secondary-text-color);
+
+				@include bp-768 {
+					display: none;
+				}
+			}
+
+			&:nth-child(2) {
+				letter-spacing: 0.2px;
+			}
+		}
+	}
+
+	&__btn {
+		width: 11rem;
+		position: absolute;
+		padding: 1rem 1.6rem;
+		bottom: 1.6rem;
+		right: 1.6rem;
+		line-height: 1;
+
+		&::after {
+			right: 20px;
+		}
+
+		@include bp-768 {
+			position: relative;
+			bottom: 0;
+			right: 0;
+			width: 12%;
+		}
+	}
+
+	&__info {
+		padding: 0 1.6rem;
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+
+		@include bp-768 {
+			padding: 0 0 0 2.4rem;
+			width: 50%;
+		}
+
+		@include bp-1440 {
+			padding: 0 0 0 3.2rem;
+		}
+	}
+
+	&__commercial-offer {
+		padding: 0 1.6rem;
+		display: block;
+
+		@include bp-768 {
+			padding: 0 2.4rem;
+		}
+
+		@include bp-1440 {
+			padding: 0 3.2rem;
+		}
+
+		span {
+			width: 12px;
+			height: 12px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 0.5rem;
+			background-image: url('../img/right-pink-arrow.svg');
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+	}
+}

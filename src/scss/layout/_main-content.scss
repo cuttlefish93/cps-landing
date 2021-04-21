@@ -1,0 +1,20 @@
+.main-content {
+
+  @include bp-1120 {
+    position: relative;
+		margin-left: 320px;
+  }
+
+  &__services {
+    display: none;
+
+    @include bp-1120 {
+      display: flex;
+      position: absolute;
+      right: 3rem;
+      top: 4rem;
+    }
+  }
+}
+
+

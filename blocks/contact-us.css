@@ -1,5 +1,5 @@
 .contact-us {
-	display: none;
+	
 }
 
 .contact-us__btn {
@@ -10,8 +10,3 @@
 	margin-right: 0;
 }
 
-@media (min-width: 768px) {
-	.contact-us {
-		display: block;
-	}
-}

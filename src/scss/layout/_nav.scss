@@ -1,0 +1,156 @@
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 100%;
+	background-color: var(--white);
+	padding: 1.8rem 0 3rem;
+	z-index: 8;
+	overflow-y: scroll;
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: transform 0.6s ease, opacity 0.6s linear;
+
+	&.opened {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	@include bp-1120 {
+		transform: translateX(0);
+		opacity: 1;
+		visibility: visible;
+		padding-top: 3rem;
+		position: absolute;
+	}
+
+	&__header {
+		padding: $padding-sm;
+		margin-bottom: 2.6rem;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+
+		@include bp-360 {
+			padding: $padding-md;
+		}
+
+		@include bp-768 {
+			margin-bottom: 5rem;
+		}
+	}
+
+	&__close-btn {
+		margin-right: 1.6rem;
+
+		@include bp-1120 {
+			display: none;
+		}
+	}
+
+	&__search-btn {
+		margin-left: auto;
+	}
+
+	&__list {
+		margin-bottom: 3rem;
+
+		@include bp-768 {
+			margin-bottom: 27rem;
+		}
+	}
+
+	&__item {
+		margin-bottom: 2.4rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include bp-768 {
+			margin-bottom: 3.2rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.nav__link {
+		display: block;
+		padding: $padding-sm;
+		transition: all 0.3s ease-in-out;
+		/* заменить all */
+
+		&.active {
+			color: var(--secondary-text-color);
+			border-left: 4px solid var(--primary-border-color);
+			padding-left: 1.2rem;
+
+			@include bp-360 {
+				padding: 0 2rem;
+			}
+		}
+
+		@include bp-360 {
+			padding: $padding-md;
+		}
+	}
+
+	&__contact-us {
+		display: block;
+		padding: $padding-sm;
+		margin-bottom: 1.6rem;
+
+		@include bp-360 {
+			padding: $padding-md;
+		}
+	}
+
+	&__contacts {
+		padding: $padding-sm;
+		margin-bottom: 0.8rem;
+
+		@include bp-360 {
+			padding: $padding-md;
+		}
+
+		@include bp-768 {
+			margin-bottom: 4rem;
+		}
+	}
+
+	&__email {
+		display: block;
+		margin-bottom: 1.2rem;
+	}
+
+	&__phone {
+		display: block;
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+
+	&__lang-list {
+		padding: $padding-sm;
+		list-style-type: none;
+
+		@include bp-360 {
+			padding: $padding-md;
+		}
+	}
+
+	&__lang-item {
+		display: inline-block;
+		text-transform: uppercase;
+		margin-right: 0.7rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+		&.active {
+			color: var(--secondary-text-color);
+		}
+	}
+}
